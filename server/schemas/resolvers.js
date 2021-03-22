@@ -30,7 +30,7 @@ const resolvers = {
                 throw new AuthenticationError('Incorrect Credentials!')
             }
 
-            const correctPw = User.isCorrectPassword(password);
+            const correctPw = user.isCorrectPassword(password);
 
             if(!correctPw) {
                 throw new AuthenticationError('Incorrect Credentials!')
