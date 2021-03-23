@@ -31,6 +31,7 @@ export const SAVE_BOOK = gql`
             email
             savedBooks {
                 bookId
+                authors
                 description
                 image
                 link
@@ -46,7 +47,7 @@ export const DELETE_BOOK = gql`
             username
             savedBooks {
                 bookId
-                
+                authors
             }
         }
     }
