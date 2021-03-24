@@ -31,5 +31,5 @@
 
 ## Website
 
-[Deployed Budget App](https://book-search-1999.herokuapp.com/)
+[Deployed Book Search](https://book-search-1999.herokuapp.com/)
 ![Budget App](images/screencapture-book-search-1999-herokuapp-saved-2021-03-23-22_33_06.png)
