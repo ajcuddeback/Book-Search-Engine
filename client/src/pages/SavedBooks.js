@@ -10,6 +10,7 @@ import { GET_ME } from '../utils/queries';
 const SavedBooks = () => {
 
   const { loading, data } = useQuery(GET_ME);
+  console.log(data)
   const [deleteBook, {error}] = useMutation(DELETE_BOOK);
 
   const userData = data?.me || {};
@@ -42,7 +43,7 @@ const SavedBooks = () => {
         </Container>
       </Jumbotron>
       <Container>
-        <h2>
+        <h2 key={userData.savedBooks.length}>
           {userData.savedBooks.length
             ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
